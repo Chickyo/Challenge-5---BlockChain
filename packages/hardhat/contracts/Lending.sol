@@ -64,7 +64,7 @@ contract Lending is Ownable {
         s_userCollateral[msg.sender] -= amount;
         _validatePosition(msg.sender);
 
-        (bool success, ) = payable(msg.sender).call{value: amount}("");
+        (bool success, ) = payable(msg.sender).call{ value: amount }("");
         if (!success) revert Lending__TransferFailed();
 
         emit CollateralWithdrawn(msg.sender, amount, i_cornDEX.currentPrice());
@@ -172,7 +172,7 @@ contract Lending is Ownable {
 
         s_userCollateral[user] -= payout;
 
-        (bool success, ) = payable(msg.sender).call{value: payout}("");
+        (bool success, ) = payable(msg.sender).call{ value: payout }("");
         if (!success) revert Lending__TransferFailed();
 
         emit Liquidation(user, msg.sender, payout, debt, i_cornDEX.currentPrice());
