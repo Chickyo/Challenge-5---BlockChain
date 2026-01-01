@@ -1,6 +1,4 @@
-# 🚩 Challenge 5: Decentralized Stablecoin (MyUSD)
-
-Dự án này là bài giải cho **Challenge 5: Xây dựng Stablecoin thuật toán (MyUSD)**.
+🚩 Challenge 5: Simple DEXMô tả: Xây dựng một sàn giao dịch phi tập trung (DEX) cho phép hoán đổi (Swap) giữa ETH và Token dựa trên công thức hằng số sản phẩm ($x \times y = k$).
 
 ## 📦 1. Các thư viện cần tải (Dependencies)
 
